@@ -1,12 +1,12 @@
 # Changelog
 
-All notable changes to AutoCal (fork of [LLMCal](https://github.com/cafferychen777/LLMCal)) are documented in this file.
+All notable changes to AutoRoster (fork of [LLMCal](https://github.com/cafferychen777/LLMCal)) are documented in this file.
 
 ---
 
 ## Overview
 
-AutoCal is a reliability-improved fork of LLMCal, the AI-powered PopClip extension for creating calendar events from natural language. This changelog tracks all modifications from the original.
+AutoRoster is a reliability-improved fork of LLMCal, the AI-powered PopClip extension for creating calendar events from natural language. This changelog tracks all modifications from the original.
 
 ---
 
@@ -23,7 +23,7 @@ AutoCal is a reliability-improved fork of LLMCal, the AI-powered PopClip extensi
 - **Timezone conversion** — `convert_datetime_between_timezones()` converts flight times from departure/arrival airport timezones to the user's home or system timezone.
 - **User preference parsing** — Detects preferred calendar (e.g. "Day2Day") and home timezone (e.g. "Amsterdam") from the Personal Preferences field in PopClip settings.
 - **Calendar name resolution** — `resolve_calendar_name()` maps abstract names ("Personal", "Work") to the user's actual calendar names. Falls back to alternatives (Family, Day2Day, work, etc.) or the first available calendar when exact match fails.
-- **AutoCal branding** — New name, identifier (`com.popclip.extension.autocal`), custom logo, and log directory (`~/Library/Logs/AutoCal/`).
+- **AutoRoster branding** — New name, identifier (`com.popclip.extension.autoroster`), custom logo, and log directory (`~/Library/Logs/AutoRoster/`).
 
 ### Changed
 
@@ -57,7 +57,7 @@ AutoCal is a reliability-improved fork of LLMCal, the AI-powered PopClip extensi
 | File | Changes |
 |------|---------|
 | `Config.json` | Preferred Calendar option; Zoom options removed; default model Sonnet 4.0 |
-| `lib/error_handler.sh` | Relaxed API key validation; AutoCal branding; Zoom codes removed; network check uses api.anthropic.com |
+| `lib/error_handler.sh` | Relaxed API key validation; AutoRoster branding; Zoom codes removed; network check uses api.anthropic.com |
 | `lib/api_client.sh` | Removed API test; flight/timezone prompt rules; `start_timezone`/`end_timezone` in JSON schema |
 | `lib/json_parser.sh` | Content block extraction; title/end_time fallbacks; `start_timezone`/`end_timezone` passthrough |
 | `lib/date_utils.sh` | `convert_datetime_between_timezones()`; removed airport lookup |
@@ -69,9 +69,9 @@ AutoCal is a reliability-improved fork of LLMCal, the AI-powered PopClip extensi
 
 ## Installation & deployment
 
-- **Source:** `/Users/DuniaMBP/AutoCal/AutoCal.popclipext/`
-- **Installable:** `AutoCal.popclipext.zip` or double-click `AutoCal.popclipext`
-- **Installed location:** `~/Library/Application Support/PopClip/Extensions/AutoCal.popclipext/`
+- **Source:** `/Users/DuniaMBP/AutoRoster/AutoRoster.popclipext/`
+- **Installable:** `AutoRoster.popclipext.zip` or double-click `AutoRoster.popclipext`
+- **Installed location:** `~/Library/Application Support/PopClip/Extensions/AutoRoster.popclipext/`
 
 Updates are deployed by copying modified files to the installed extension directory. No reinstall required.
 
@@ -79,7 +79,7 @@ Updates are deployed by copying modified files to the installed extension direct
 
 ## Troubleshooting reference
 
-- **Log file:** `~/Library/Logs/AutoCal/autocal.log`
+- **Log file:** `~/Library/Logs/AutoRoster/autoroster.log`
 - **API key:** Must start with `sk-ant-`; trim spaces when pasting
 - **Calendar:** If "Personal"/"Work" fail, the resolver uses Family, Day2Day, work, etc., or the first calendar
 - **Timezones:** AI provides IANA timezones for flights; conversion targets user's home TZ from preferences or system TZ

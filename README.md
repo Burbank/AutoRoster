@@ -1,4 +1,4 @@
-# AutoCal
+# AutoRoster
 
 **AI-powered calendar events from natural language** — A fork of [LLMCal](https://github.com/cafferychen777/LLMCal) for [PopClip](https://popclip.app) on macOS.
 
@@ -8,7 +8,7 @@ Select text like *"Team meeting tomorrow at 2pm"* or *"Flight AMS 12:30 to LAX 1
 
 ## About this fork
 
-AutoCal is based on [LLMCal](https://github.com/cafferychen777/LLMCal) by cafferychen777. Changes include multi-timezone support for flights, removal of Zoom integration (calendar-only), and reliability improvements. Credit for the original extension goes to the LLMCal project.
+AutoRoster is based on [LLMCal](https://github.com/cafferychen777/LLMCal) by cafferychen777. Changes include multi-timezone support for flights, removal of Zoom integration (calendar-only), and reliability improvements. Credit for the original extension goes to the LLMCal project.
 
 ---
 
@@ -37,8 +37,8 @@ AutoCal is based on [LLMCal](https://github.com/cafferychen777/LLMCal) by caffer
 ### Install
 
 1. Download or clone this repo.
-2. Double-click `AutoCal.popclipext` to install into PopClip.
-3. Open PopClip → Extensions → AutoCal and add your **Anthropic API key**.
+2. Double-click `AutoRoster.popclipext` to install into PopClip.
+3. Open PopClip → Extensions → AutoRoster and add your **Anthropic API key**.
 4. (Optional) Set **Preferred Calendar** to your calendar name (e.g. Day2Day, Personal).
 
 ---
@@ -64,10 +64,10 @@ AutoCal is based on [LLMCal](https://github.com/cafferychen777/LLMCal) by caffer
 
 ## Troubleshooting
 
-**Log file:** `~/Library/Logs/AutoCal/autocal.log`
+**Log file:** `~/Library/Logs/AutoRoster/autoroster.log`
 
 ```bash
-tail -80 ~/Library/Logs/AutoCal/autocal.log
+tail -80 ~/Library/Logs/AutoRoster/autoroster.log
 ```
 
 **Restart PopClip after changes:**
